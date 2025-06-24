@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio de Letícia Vitória</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&display=swap');
+    :root {
+      --cor-fundo: #fffafc;
+      --cor-primaria: #a74b82;
+      --cor-secundaria: #f48fb1;
+      --cor-texto: #4a235a;
+    }
+    body {
+      font-family: 'Chakra Petch', sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+    }
+    header, footer {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    h1, h2 {
+      color: var(--cor-primaria);
+      font-weight: 700;
+    }
+    .lead {
+      color: var(--cor-secundaria);
+      font-weight: 500;
+    }
+    .card {
+      margin-bottom: 1.5rem;
+    }
+    .card-title {
+      color: var(--cor-primaria);
+    }
+    .btn-primary {
+      background-color: var(--cor-secundaria);
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #ec407a;
+    }
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Letícia Vitória</h1>
+    <p class="lead">Estudante do 3º ano do Ensino Médio</p>
+    <p>Aprendendo a programar com amor e curiosidade pela plataforma Alura, por meio do projeto em parceria com o governo. Estudo na E.E Fortaleza II à noite, onde desenvolvo minhas ideias com criatividade e carinho.</p>
+  </header>
+
+  <main class="container">
+    <h2 class="text-center mb-5">Meus Projetos</h2>
+    <div class="row">
+
+      <div class="col-md-6 col-lg-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">Projeto 1 - Jogo de Corrida</h5>
+            <p class="card-text">Um divertido jogo de corrida feito com p5.js, onde os jogadores competem com emojis personalizados!</p>
+            <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalProjeto1">Ver mais</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">Projeto 2 - Quente ou Frio</h5>
+            <p class="card-text">Um jogo simples e viciante de adivinhação baseado na distância entre o cursor do mouse e um ponto escondido.</p>
+            <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalProjeto2">Ver mais</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">Projeto 3 - Monalisa Interativa</h5>
+            <p class="card-text">Uma releitura da famosa obra "Monalisa", usando formas geométricas e criatividade no código p5.js.</p>
+            <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalProjeto3">Ver mais</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="modal fade" id="modalProjeto1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Projeto 1 - Jogo de Corrida</h5>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Esse projeto é um jogo de corrida feito com a biblioteca p5.js. Os jogadores se movem com teclas do teclado e correm em uma pista com chegada. Foi meu primeiro jogo com controle de evento e condições de vitória!</p>
+          <p>Você pode jogar clicando no botão abaixo:</p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://editor.p5js.org/00001105015129sp/full/m5Mx-bOEt" class="btn btn-primary" target="_blank">Jogar agora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalProjeto2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Projeto 2 - Quente ou Frio</h5>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Nesse jogo, o jogador precisa encontrar um ponto secreto movendo o mouse. A distância é representada por um círculo, e quando chega perto o suficiente, aparece a mensagem de vitória!</p>
+          <p>Teste sua percepção no link abaixo:</p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://editor.p5js.org/00001105015129sp/full/Nfhm-5fg_" class="btn btn-primary" target="_blank">Jogar agora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalProjeto3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Projeto 3 - Monalisa Interativa</h5>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Uma interpretação artística e divertida da Monalisa, feita com código. Usamos formas básicas e cores para representar a famosa pintura de forma original e animada.</p>
+          <p>Clique abaixo para ver como ficou:</p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://editor.p5js.org/00001105015129sp/full/QnwOmyBnF" class="btn btn-primary" target="_blank">Ver agora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Letícia Vitória - Portfólio de Projetos</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
